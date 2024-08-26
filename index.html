@@ -115,7 +115,7 @@
     <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="w-100" src="img/carousel-1.jpg" alt="Image" />
+          <img class="w-100" src="img/3 (1).jpg" alt="Image" />
           <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div class="p-3" style="max-width: 900px">
               <h6 class="text-white mb-3 animated slideInDown text-poppins first-line">
@@ -138,7 +138,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="w-100" src="img/carousel-2.jpg" alt="Image" />
+          <img class="w-100" src="img/1.jpg" alt="Image" />
           <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div class="p-3" style="max-width: 900px">
               <h6 class="text-white mb-3 animated slideInDown text-poppins first-line">
@@ -229,11 +229,11 @@
             </h5>
             <h1 class="mb-0">
               The Best IT Solution With
-              <span style="color: #0B0968">25 Years</span> of Experience
+              <span style="color: #0B0968">10 Years</span> of Experience
             </h1>
           </div>
           <p class="mb-4" style="text-align: justify;">
-            USS Development is a Georgia based company that was founded in 2023.
+            USS Development is a Pakistan based company that was founded in 2023.
             Initially, it was focused on manufacturing completely new and
             unique consumer products which it also marketed and distributed
             throughout the US. At the same time it began its own marketing and
@@ -293,7 +293,7 @@
   <div class="container-fluid services-bg-img py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container py-5">
       <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px">
-        <h6 class="fw-bold text-primary text-uppercase">Core Features</h6>
+        <h6 class="fw-bold text-light text-uppercase">Core Features</h6>
         <h1 class="mb-0 text-white">Amazing IT Features</h1>
       </div>
 
@@ -827,45 +827,35 @@
             excellence together."
           </p>
           <div class="rounded d-flex align-items-center wow zoomIn" data-wow-delay="0.9s">
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="row g-3">
-                <div class="col-xl-12">
-                  <input type="text" id="name" class="form-control bg-white border-0" placeholder="Your Name"
-                    style="height: 55px" />
+                <input type="hidden" name="access_key" value="66bfe3a2-372f-4349-a9d4-8b37409e8cb8">
+                <div class="col-md-6">
+                  <input type="text" id="name" name="name" required class="form-control border-1 bg-white px-4"
+                    placeholder="Your Name" style="height: 55px" />
                   <span style="font-size: 0.7rem; color: red;" id="nameError"></span>
                 </div>
-                <div class="col-12">
-                  <input type="email" id="email" class="form-control bg-white border-0" placeholder="Your Email"
-                    style="height: 55px" />
+                <div class="col-md-6">
+                  <input type="email" id="email" name="email" required class="form-control border-1 bg-white px-4"
+                    placeholder="Your Email" style="height: 55px" />
                   <span style="font-size: 0.7rem; color: red;" id="emailError"></span>
                 </div>
                 <div class="col-12">
-                  <select id="service" class="form-select bg-white border-0" style="height: 55px">
-                    <option selected value="">Select A Service</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="App Development">App Development</option>
-                    <option value="Graphic Designing">Graphic Designing</option>
-                    <option value="Search Engine Optimization">Search Engine Optimization</option>
-                    <option value="Tech Support">Tech Support</option>
-                    <option value="Payment Integration">Payment Integration</option>
-                    <option value="WordPress Development">WordPress Development</option>
-                    <option value="Software Testing & QA">Software Testing & QA</option>
-                    <option value="AWS & DevOps">AWS & DevOps</option>
-                  </select>
-                  <span style="font-size: 0.7rem; color: red;" id="serviceError"></span>
+                  <input type="text" id="subject" name="subject" required class="form-control border-1 bg-white px-4"
+                    placeholder="Subject" style="height: 55px" />
+                  <span style="font-size: 0.7rem; color: red;" id="subjectError"></span>
                 </div>
                 <div class="col-12">
-                  <textarea id="message" class="form-control bg-white border-0" rows="3"
-                    placeholder="Message"></textarea>
+                  <textarea id="message" name="message" required class=" form-control border-1 bg-white px-4 py-3"
+                    rows="4" placeholder="Message"></textarea>
                   <span style="font-size: 0.7rem; color: red;" id="messageError"></span>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary py-3" type="button" id="submitButton" onclick="fn_sendMessage()"
-                    style="margin-left: -10px">
-                    Request A Quote
+                  
+                  <button id="submitButton" class="btn btn-primary py-3" style="margin-left: -10px;" type="submit">
+                    Send Message
                   </button>
                 </div>
-                <div class="d-none d-lg-block m-4"></div>
               </div>
             </form>
           </div>
